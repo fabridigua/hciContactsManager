@@ -17,7 +17,7 @@ Example of Contacts Manager built with Apache Cordova following Human Computer I
     <tr>
         <td rowspan="2"><b>Contact persistence</b></td><td>You can save (in the cookies) the current session (manteining th contact list) by clicking in the floppy icon in the top bar</td><td><img src="imgs/save_session.png"/></td>
     </tr>
-    <tr><td>Then you can restore the session when you refresh the page. You can also reconnect the device (i will show it later!)</td><td><img src="imgs/restored.png"/></td></tr>
+    <tr><td>Then you can restore the session when you refresh the page. You can also reconnect the device (see Notes)</td><td><img src="imgs/restored.png"/></td></tr>
     <tr>
 </table>
 
