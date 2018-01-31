@@ -2,9 +2,10 @@
 Example of Contacts Manager built with Apache Cordova following Human Computer Interaction principles
 
 ## Main features ##
-
+![filters](/imgs/filters.png)
 <table>
     <tr>
-        <td><b>Visualization of all contacts</b></td><td>The interface shows all the contacts in your phone. You can order them by some filter</td><td>![alt text](/imgs/filters.png)</td>
+        <td><b>Visualization of all contacts</b></td><td>The interface shows all the contacts in your phone. You can order them by some filter</td><td>![filters](/imgs/filters.png)</td>
+        ![filters](/imgs/filters.png)
     </tr>
 </table>
