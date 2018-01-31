@@ -21,4 +21,24 @@ Example of Contacts Manager built with Apache Cordova following Human Computer I
     <tr>
 </table>
 
+## Extra features ##
+
+<table>
+    <tr>
+        <td><b>Contact tagging and tag search</b></td><td>You can add tags to your contacts, linking them to the current session. You can also looking for contact with a certaing tag in the search box</td><td><img src="imgs/tags.png"/></td>
+    </tr>
+    <tr>
+        <td rowspan="2"><b> Single-contact visualization</td><td>You can see the single contact's details</td><td style="text-align: center;"><img src="imgs/details_btn.png"/></td>
+    </tr>
+    <tr><td>Here you can delete the user</td><td><img src="imgs/delete_user_btn.png"/></td></tr>
+    <tr>
+        <td><b>Insertion of new contact</b></td><td>From the top bar, you can add a contact to your phone</td><td><img src="imgs/add_contact_btn.png"/></td>
+    </tr>
+    <tr>
+        <td rowspan="2"><b>Contact persistence</b></td><td>You can save (in the cookies) the current session (manteining th contact list) by clicking in the floppy icon in the top bar</td><td><img src="imgs/save_session.png"/></td>
+    </tr>
+    <tr><td>Then you can restore the session when you refresh the page. You can also reconnect the device (i will show it later!)</td><td><img src="imgs/restored.png"/></td></tr>
+    <tr>
+</table>
+
 Note: CRUD of a contacts needs the device to be connected
