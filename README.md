@@ -37,7 +37,7 @@ Example of Contacts Manager built with Apache Cordova following Human Computer I
         <td><b>Dynamic persistence</b></td><td>You can make an operation in the contacts database (creating, editing, deleting..) even if your device is disconnected. When you re-connect the device, the operation will done. </td><td><img src="imgs/disconnected.png"/></td>
     </tr>
     <tr>
-        <td><b>Sending SMS</b></td><td>You can also send a sms to a contact! </td><td><img src="imgs/sms.png"/></td>
+        <td><b>Sending SMS</b></td><td>You can also send a sms to a contact! </td><td><img src="imgs/smss.png"/></td>
     </tr>
 </table>
 
