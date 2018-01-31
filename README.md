@@ -8,9 +8,9 @@ Example of Contacts Manager built with Apache Cordova following Human Computer I
         <td><b>Visualization of all contacts</b></td><td>The interface shows all the contacts in your phone. You can order them by some filter</td><td><img src="imgs/filters.png"/></td>
     </tr>
     <tr>
-        <td rowspan="2"><b> Single-contact visualization</td><td>You can see the single contact's details</td><td><img src="imgs/details_btn.png"/></td>
+        <td rowspan="2"><b> Single-contact visualization</td><td>You can see the single contact's details</td><td style="text-align: center;"><img src="imgs/details_btn.png"/></td>
     </tr>
-    <tr><td>Here you can delete the user</td><td><img src="imgs/delete_user_btn.png"/></td></tr>
+    <tr><td>Here you can delete the user</td><td style="text-align: center;"><img src="imgs/delete_user_btn.png"/></td></tr>
 </table>
 
 Note: CRUD of a contacts needs the device to be connected
