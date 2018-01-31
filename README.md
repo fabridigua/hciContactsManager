@@ -47,3 +47,4 @@ Example of Contacts Manager built with Apache Cordova following Human Computer I
 1. You can connect the device simply scanning the QR Code appairing when you open the web site
 2. Direct CRUD operations of a contacts needs the device to be connected
 3. You can re-connect a device (restoring a session) by insert the number of the session (the number on top-right of the page) in the app ("Insert the session id").
+4. If you close the app not clicking the android back button, the website will continue to think that app is connected!
