@@ -2,7 +2,7 @@
 Example of Contacts Manager built with Apache Cordova following Human Computer Interaction principles
 
 ## Main features ##
-![alt text](hciContactsManager/imgs/filters.png)
+![alt text](/imgs/filters.png)
 
 <table>
     <tr>
