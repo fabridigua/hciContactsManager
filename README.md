@@ -15,7 +15,7 @@ Example of Contacts Manager built with Apache Cordova following Human Computer I
         <td><b>Insertion of new contact</b></td><td>From the top bar, you can add a contact to ypur phone</td><td><img src="imgs/add_contact_btn.png"/></td>
     </tr>
     <tr>
-        <td rowspan="2"><b>Contact persistence</b></td><td>You can save the current list of contacts by clicking in the floppy icon in the top bar</td><td><img src="imgs/save_session_btn.png"/></td>
+        <td rowspan="2"><b>Contact persistence</b></td><td>You can save the current list of contacts by clicking in the floppy icon in the top bar</td><td><img src="imgs/save_btn.png"/></td>
     </tr>
     <tr><td>Here you can delete the user</td><td><img src="imgs/delete_user_btn.png"/></td></tr>
     <tr>
