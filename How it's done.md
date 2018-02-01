@@ -2,8 +2,8 @@
 
 hciContactsManager is composed by composed by two simple part:
 
-1. A minimal Android application that simply sends and receives data to the server
-2. A web application (website) that is the real Contacts Manager
+1. A minimal Android application that simply sends and receives data to the server -> located in "qr_contacts_mgr" folder
+2. A web application (website) that is the real Contacts Manager -> located in "hciContactsManager" folder
 
 In addition there is a (free) server, located in hcicontactsmanager2017.altervista.org.
 You can find a (empty) copy of the database used in the folder \"_server\", with also all the needed php files.
@@ -29,4 +29,5 @@ In the folder js/Utility there are some little javascript utility, used for a be
 - *sonic.js* (https://github.com/padolsey/sonic.js) is for the loader
 - *Cookies.js* (https://github.com/js-cookie/js-cookie) for a simpler use of cookies
 
-All libraries are open source
+The little Android app is made with Apache Cordova (https://cordova.apache.org/).
+See Installation Guide for Cordova installation details if you want to compile the app.
