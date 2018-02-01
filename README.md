@@ -1,9 +1,11 @@
 # hciContactsManager
 Example of Contacts Manager built with Apache Cordova following Human Computer Interaction principles.
 
-See How it's is done
-See installation guide
-See Demo
+See [How it's is done](./How it's done.md) for details on the architecture
+
+See [installation guide](./Installation Guide.md) 
+
+See [Demo](http://hcicontactsmanager2017.altervista.org/) hosted on Altervista for test the web application.
 
 ## Main features ##
 
