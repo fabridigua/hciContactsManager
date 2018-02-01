@@ -22,6 +22,7 @@ There are other files used only for building the interface.
 In the folder css there are the style files. 
 - *bulma.css* (https://bulma.io/) is used for the contacts table, making it responsible
 - *animate.css* (https://daneden.github.io/animate.css/) is used for the animation
+
 In the folder js/Utility there are some little javascript utility, used for a better interaction:
 - *jBox.js*(https://stephanwagner.me/jBox) is used for the tooltips and modal windows
 - *jquery-confirm.js* (https://craftpip.github.io/jquery-confirm/) is used for the alert boxes
