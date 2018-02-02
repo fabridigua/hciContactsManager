@@ -6,6 +6,7 @@ See [How it's is done](./How%20it's%20done.md) for details on the architecture.
 See [installation guide](Installation%20Guide.md) for installation and dependencies.
 
 See [Demo](http://hcicontactsmanager2017.altervista.org/) hosted on Altervista for test the web application.
+See [Demo With defauly contacts](http://hcicontactsmanager2017.altervista.org/demo.html) for a version with some defualt contacts.
 
 ## Main features ##
 
