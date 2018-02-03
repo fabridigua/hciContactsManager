@@ -1,0 +1,250 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Fabrizio
+ * Date: 11/11/2017
+ * Time: 21:40
+ */
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jBox.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery-confirm.min.css">
+    <script type="text/javascript" src="js/utility/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/utility/jquery-qrcode-0.14.0.min.js"></script>
+    <script type="text/javascript" src="js/utility/sonic.js"></script>
+    <script type="text/javascript" src="js/utility/jBox.min.js"></script>
+    <script type="text/javascript" src="js/utility/jquery-confirm.min.js"></script>
+    <script type="text/javascript" src="js/utility/Cookies.js"></script>
+    <script type="text/javascript" src="js/Controller.js"></script>
+    <script type="text/javascript" src="js/Contact.js"></script>
+    <script type="text/javascript" src="js/Model.js"></script>
+    <title>HCI Contacts Manager</title>
+</head>
+<body>
+<div class="top_bar">
+    <p id="bar_model"></p>
+    <p id="bar_number_contacts"></p>
+    <div id="bar_filter">
+        <p>Order by:</p>
+        <p class="filters" id="filter_name">Name</p>
+        <p class="filters" id="filter_number">Number</p>
+        <p class="filters" id="filter_email">Email</p>
+        <p class="filters" id="filter_birthday">Birthday</p>
+    </div>
+    <img id="add_contact_btn" src="images/add_contact_btn.png"/>
+    <img id="refresh_btn" src="images/refresh_btn.png"/>
+    <img id="save_btn" src="images/save_session_btn.png"/>
+    <p id="session_text"></p>
+    <span id="connection_thumb"></span>
+</div>
+<div class="search_container animated bounceInDown">
+    <input type="text" name="search" placeholder="Search a field or a TAG..">
+</div>
+<div class="qrDivCotainer">
+<p><b>HCI Contact Manager</b></p>
+<p>Scan the QR code to send me your contacts!</p>
+<div id="qrcode-container">
+</div>
+<div class="credits"><p>Created by&ensp;</p><a href="https://github.com/fabridigua">Fabrizio Di Guardo</a><p>,&ensp;'fabri.diguaATgmail.com'.replace('AT','@'),&ensp;2018</p></div>
+</div>
+<div class="contacts-container">
+<div class="tile is-ancestor is-vertical">
+
+</div>
+</div>
+<!-- Templates -->
+<div id="details_popup_template" style="display: none">
+    <div>
+        <img class="details_img" src="images/contact_blue.jpg">
+        <p class="details_name"></p>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Name:</p>
+                <p class="details_tab_right" id="details_displayName">-</p>
+            </div>
+        </div>
+        <div class="details_tab">
+
+            <div class="details_tab_field">
+                <p class="details_tab_left">Nickname:</p>
+                <p class="details_tab_right" id="details_nickname">-</p>
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Emails:</p>
+                <p class="details_tab_right" id="details_emails">-</p>
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Phone Numbers:</p>
+                <p class="details_tab_right" id="details_phoneNumbers">-</p>
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Address:</p>
+                <p class="details_tab_right" id="details_addresses">-</p>
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Organization:</p>
+                <p class="details_tab_right" id="details_organizations"></p>
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Birthday:</p>
+                <p class="details_tab_right" id="details_birthday">-</p>
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Note:</p>
+                <p class="details_tab_right" id="details_note">-</p>
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Url:</p>
+                <p class="details_tab_right" id="details_url">-</p>
+            </div>
+        </div>
+        <img src="images/delete_user_btn.png" class="details_delete_user">
+        <img src="images/edit_btn.png" class="details_edit_user">
+    </div>
+</div>
+<div id="details_edit_popup_template" style="display: none">
+    <div>
+        <img class="details_img" src="images/contact_blue.jpg">
+        <p class="details_name"></p>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Name:</p>
+                <input class="details_tab_right" id="details_displayName" type="text" name="displayName" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+
+            <div class="details_tab_field">
+                <p class="details_tab_left">Nickname:</p>
+                <input class="details_tab_right" id="details_nickname" type="text" name="nickname" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Emails:</p>
+                <input class="details_tab_right" id="details_emails" type="text" name="emails" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Phone Numbers:</p>
+                <input class="details_tab_right" id="details_phoneNumbers" type="text" name="phoneNumbers" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Address:</p>
+                <input class="details_tab_right" id="details_addresses" type="text" name="addresses" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Organization:</p>
+                <input class="details_tab_right" id="details_organizations" type="text" name="organizations" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Birthday:</p>
+                <input class="details_tab_right" id="details_birthday" type="text" name="birthday" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Note:</p>
+                <input class="details_tab_right" id="details_note" type="text" name="note" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Url:</p>
+                <input class="details_tab_right" id="details_url" type="text" name="url" value="">
+            </div>
+        </div>
+        <img src="images/confirm_user_btn.png" class="details_edit_confirm">
+    </div>
+</div>
+<div id="details_new_popup_template" style="display: none">
+    <div>
+        <img class="details_img" src="images/contact_blue.jpg">
+        <p class="details_name"></p>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Name:</p>
+                <input class="details_tab_right" id="details_displayName" type="text" name="displayName" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+
+            <div class="details_tab_field">
+                <p class="details_tab_left">Nickname:</p>
+                <input class="details_tab_right" id="details_nickname" type="text" name="nickname" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Emails:</p>
+                <input class="details_tab_right" id="details_emails" type="text" name="emails" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Phone Numbers:</p>
+                <input class="details_tab_right" id="details_phoneNumbers" type="text" name="phoneNumbers" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Address:</p>
+                <input class="details_tab_right" id="details_addresses" type="text" name="addresses" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Organization:</p>
+                <input class="details_tab_right" id="details_organizations" type="text" name="organizations" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Birthday:</p>
+                <input class="details_tab_right" id="details_birthday" type="text" name="birthday" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Note:</p>
+                <input class="details_tab_right" id="details_note" type="text" name="note" value="">
+            </div>
+        </div>
+        <div class="details_tab">
+            <div class="details_tab_field">
+                <p class="details_tab_left">Url:</p>
+                <input class="details_tab_right" id="details_url" type="text" name="url" value="">
+            </div>
+        </div>
+        <img src="images/confirm_user_btn.png" class="details_new_confirm">
+    </div>
+</div>
+</body>
+</html>
+<?php
