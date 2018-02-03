@@ -9,7 +9,7 @@ you can install Cordova with the tool [npm](https://www.npmjs.com/):
 > npm install -g cordova
 
 Then you can compile the project (you need the [Android SDK](https://developer.android.com/studio/index.html)), 
-moving in "qr_contacts_mgr" directory and lanching this command:
+moving in "qr_contacts_mgr" directory (you need to unzip it before) and lanching this command:
 
 > cordova run android
 
