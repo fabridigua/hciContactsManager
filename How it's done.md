@@ -31,4 +31,4 @@ In the folder js/Utility there are some little javascript utility, used for a be
 
 The little Android app is made with Apache Cordova (https://cordova.apache.org/).
 
-See [Installation Guide[(https://github.com/fabridigua/hciContactsManager/blob/master/Installation%20Guide.md) for Cordova installation details if you want to compile the app.
+See [Installation Guide](https://github.com/fabridigua/hciContactsManager/blob/master/Installation%20Guide.md) for Cordova installation details if you want to compile the app.
