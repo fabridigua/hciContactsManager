@@ -6,11 +6,13 @@ hciContactsManager is composed by composed by two simple part:
 2. A web application (website) that is the real Contacts Manager -> located in "hciContactsManager" folder
 
 In addition there is a (free) server, located in hcicontactsmanager2017.altervista.org.
+
 You can find a (empty) copy of the database used in the folder \"_server\", with also all the needed php files.
 
 ## Human Computer Interaction Concepts
 
 The website core is built following the Model-View-Controller pattern, in Javascript (and jQuery).
+
 There are three principal files js implementing the MVC in the project:
 1. The file **Model.js** is the Model and manages the data (the contacts)
 2. The file **index.html** is the View and simply shows the data to the user
