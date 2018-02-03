@@ -7,7 +7,7 @@ See [installation guide](Installation%20Guide.md) for installation and dependenc
 
 See [Demo](http://hcicontactsmanager2017.altervista.org/) hosted on Altervista for test the web application.
 
-See [Demo with dummy contacts](http://hcicontactsmanager2017.altervista.org/demo.html) for a version with some dummy contacts (created with https://www.mockaroo.com/).
+See [Demo with dummy contacts](http://hcicontactsmanager2017.altervista.org/demo/demo.html) for a version with some dummy contacts (created with https://www.mockaroo.com/).
 
 ## Main features ##
 
