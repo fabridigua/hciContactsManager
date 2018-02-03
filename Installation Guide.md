@@ -1,4 +1,4 @@
-# hciContactsManager Installtion Guide
+# hciContactsManager Installation Guide
 
 ## APP Installation ##
 Even if you can simply install the apk in the folder APK, you need to install Cordova for compile the app.
