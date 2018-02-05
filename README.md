@@ -36,9 +36,6 @@ See [Demo with dummy contacts](http://hcicontactsmanager2017.altervista.org/demo
         <td><b>Contact tagging and tag search</b></td><td>You can add tags to your contacts, linking them to the current session. You can also looking for contact with a certaing tag in the search box</td><td><img src="imgs/tags.png"/></td>
     </tr>
     <tr>
-        <td><b>Contact editing*</b></td><td>You can edit contact's fields</td><td><img src="imgs/edit_btn.png"/></td>
-    </tr>
-    <tr>
         <td><b> Full-text search</b></td><td>You can search a contact writing a string contained in any of his fields, including TAGs.</td><td><img src="imgs/searchbar.png"/></td>
     </tr>
     <tr>
@@ -48,8 +45,6 @@ See [Demo with dummy contacts](http://hcicontactsmanager2017.altervista.org/demo
         <td><b>Sending SMS</b></td><td>You can also send a sms to a contact! </td><td><img src="imgs/smss.png"/></td>
     </tr>
 </table>
-
-*User editing is not dirrectly supported by Cordova, so you can only change existing fields and no creating new fields. 
 
 ### Notes ###
 1. You can connect the device simply scanning the QR Code appairing when you open the web site
